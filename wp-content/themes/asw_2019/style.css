@@ -1,0 +1,29 @@
+/*
+Theme Name: Single Purpose Custom Theme
+Theme URI:
+Author: Elliot Toman
+Author URI: https://www.asubtleweb.com
+Description: A custom theme for Single Purpose Sober Club
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('assets/css/base.css');
+@import url('assets/css/tablet.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #00418C;
+    --red: #750000;
+    --serif: 'Libre Baskerville', serif;
+    --sans-serif: 'Work Sans', sans-serif;
+}
