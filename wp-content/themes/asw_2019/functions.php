@@ -145,6 +145,11 @@ function editglobalcustomfields() {
 	<form method="post" action="options.php">
 	<?php wp_nonce_field('update-options') ?>
 
+
+
+	<p><strong>Home Title:</strong><br />
+	<input type="text" name="home_title" size="45" value="<?php echo get_option('home_title'); ?>" /></p>
+
 	<p><strong>Email Address:</strong><br />
 	<input type="text" name="email" size="45" value="<?php echo get_option('email'); ?>" /></p>
 
@@ -154,7 +159,7 @@ function editglobalcustomfields() {
 	<p><input type="submit" name="Submit" value="Update Options" /></p>
 
 	<input type="hidden" name="action" value="update" />
-	<input type="hidden" name="page_options" value="email,phone" />
+	<input type="hidden" name="page_options" value="home_title,email,phone" />
 	
 
 	</form>

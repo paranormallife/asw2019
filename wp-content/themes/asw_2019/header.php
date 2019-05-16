@@ -43,12 +43,11 @@
 <?php if ( is_front_page() ) { ?>
 <title><?php /* Site Name */ bloginfo('name'); echo ': '; bloginfo('description'); ?></title>
 <? } else { ?>
-<title><?php /* Site Name */ bloginfo('name'); ?> | <?php /* Page Title */ wp_title( '|', true, 'right' );?> </title>
+<title><?php /* Site Name */ bloginfo('name'); ?>. <?php /* Page Title */ wp_title( '|', true, 'right' );?> </title>
 <?php } ?>
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" />
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
@@ -78,42 +77,24 @@
 
 <body id="<?php echo $post->post_name; ?>" class="single-purpose <?php echo get_post_type(); ?>">
 
+<div id="backdrop"></div>
+
 <header>
-  <div class="logo">
-    <a href="<?php echo get_bloginfo('wpurl'); ?>" title="Single Purpose Homepage">
-      <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/header-seal.svg" />
-    </a>
-  </div>
-  <div class="header-content">
-    <div class="nav-container">
-      <div class="title">
-        <a href="<?php echo get_bloginfo('wpurl'); ?>">
-            Single Purpose Sober Club
-        </a>
-      </div>
-      <div class="subtitle">
-          Poughkeepsie, New York
-      </div>
-      <div class="nav-wrap">
-        <div class="nav-icons">
-          <a href="mailto:<?php get_option('email'); ?>">
-            <i class="fas fa-envelope-square"></i>
-          </a>
-          <div class="menu-icon" id="navIcon" onclick="navToggle()">
-            <i class="fas fa-bars open icon"></i>
-            <i class="fas fa-times close icon"></i>
-          </div>
-          <a href="<?php get_option('facebook'); ?>" target="_blank">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-        </div>
-        <nav>
-          <?php get_template_part('snippets/nav_menu'); ?>
-        </nav>
-      </div>
-    </div>
+  <div class="header-wrapper">
+    <h1>
+      <a href="<?php echo get_bloginfo('wpurl'); ?>" title="Home Page"><?php echo get_bloginfo('name'); ?>&nbsp;&nbsp;</a>
+      <?php
+        if( is_front_page() ) {
+          echo get_option('home_title');
+        } else {
+          wp_title();
+        }
+      ?>
+    </h1>
   </div>
 </header>
+
+<?php get_template_part('snippets/header_nav'); ?>
 
 <!-- END OF HEADER.PHP -->
 
