@@ -7,9 +7,11 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/plugins/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/themes/twentynineteen/
 
 /.htaccess
 /license.txt
@@ -17,3 +19,4 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+*.DS_Store
