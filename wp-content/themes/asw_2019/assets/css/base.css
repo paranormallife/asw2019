@@ -112,6 +112,8 @@ main {
 
 #navToggle {
     display: none;
+    position: absolute;
+    width: 100%;
 }
 
 .header-nav.active #navToggle {
@@ -126,27 +128,6 @@ main {
     text-align: left;
 }
 
-.nav-container ul li:nth-of-type(1n+1) a {
-    color: #E91E63;
+.header-nav .nav-container ul li a {
+    color: white;
 }
-
-.nav-container ul li:nth-of-type(2n+2) a {
-    color: #FF5722;
-}
-
-.nav-container ul li:nth-of-type(3n+3) a {
-    color: #FFC107;
-}
-
-.nav-container ul li:nth-of-type(4n+4) a {
-    color: #C0CA33;
-}
-
-.nav-container ul li:nth-of-type(5n+5) a {
-    color: #26A69A;
-}
-
-.nav-container ul li:nth-of-type(5n+5) a {
-    color: #9C27B0;
-}
-
