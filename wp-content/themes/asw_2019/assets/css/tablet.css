@@ -1,5 +1,16 @@
-@media screen and ( min-width: 768px ) {
+@media screen and ( min-width: 781px ) {
 
-    
+    .page-content {
+        max-width: 1080px;
+    }
+
+    .page-content p {
+        margin: 0 auto 1rem auto;
+        max-width: 600px;
+    }
+
+    .wp-block-column p {
+        text-align: left;
+    }
 
 }

@@ -26,6 +26,18 @@ img {
     max-width: 100%;
 }
 
+@media screen and ( max-width: 781px ) {
+    .asw .wp-block-columns {
+        display: block;
+    }
+}
+
+@media screen and ( min-width: 600px ) and ( max-width: 781px ) {
+    .asw .wp-block-column:nth-child(2n) {
+        margin-left: 0;
+    }
+}
+
 /* :root {
     --blue: #00418C;
 } */

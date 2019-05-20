@@ -65,6 +65,11 @@ main {
     text-transform: uppercase;
 }
 
+.thumb-in-post {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
 .thumb-in-post img {
     height: auto;
     width: 100%;
@@ -110,9 +115,18 @@ main {
     color: white;
 }
 
+@keyframes navigation {
+    0% { background:rgb(255, 1, 255); }
+    25% { background:rgb(208, 255, 1); }
+    100% { background: rgb(0, 153, 255); }
+}
+
 #navToggle {
-    background: rgb(131,58,180);
-    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: white;
+    animation-name: navigation;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     display: none;
     position: absolute;
     width: 100%;
@@ -137,4 +151,46 @@ main {
 
 .header-nav .nav-container ul li a {
     color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul {
+    display: block;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 0.25rem;
+}
+
+footer ul li a {
+    font-weight: 300;
+}
+
+.footer-container {
+    padding: 1rem 0;
+}
+
+.page-content {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.page-tagline {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1rem;
 }

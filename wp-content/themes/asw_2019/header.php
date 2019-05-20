@@ -75,7 +75,7 @@
 <?php /* This should always be included just before the </head> tag. */ wp_head(); ?>
 </head>
 
-<body id="<?php echo $post->post_name; ?>" class="single-purpose <?php echo get_post_type(); ?>">
+<body id="<?php echo $post->post_name; ?>" class="asw <?php echo get_post_type(); ?>">
 
 <div id="backdrop"></div>
 
@@ -87,7 +87,8 @@
         if( is_front_page() ) {
           echo get_option('home_title');
         } else {
-          wp_title();
+          the_title();
+          echo '.';
         }
       ?>
     </h1>
