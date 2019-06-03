@@ -1,4 +1,13 @@
+@keyframes bg {
+    0% { background-color: #ffffff }
+    100% { background-color: #ffeecb }
+}
+
 body {
+    animation-name: bg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     color: black;
     font: 300 1rem 'Oswald', sans-serif;
     text-align: center;
