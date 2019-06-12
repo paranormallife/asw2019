@@ -1,13 +1,15 @@
 @keyframes bg {
     0% { background-color: #ffffff }
-    100% { background-color: #ffeecb }
+    50% { background-color: #cbffee }
+    100% { background-color: #f9cbff }
 }
 
 body {
     animation-name: bg;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-color: white;
     color: black;
     font: 300 1rem 'Oswald', sans-serif;
     text-align: center;

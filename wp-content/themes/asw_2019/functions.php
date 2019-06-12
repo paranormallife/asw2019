@@ -59,18 +59,18 @@ function asw_register_custom_types() {
 	
 
 	// FRONT PAGE HERO
-	/* register_post_type(
-		  'hero', array(
+	register_post_type(
+		  'examples', array(
 			  'labels' => array(
-				  'name' => 'Homepage Slides', 
-				  'singular_name' => 'Homepage Carousel', 
-				  'add_new' => 'Add new slide', 
-				  'add_new_item' => 'Add new slide', 
-				  'new_item' => 'New slide', 
-				  'view_item' => 'View slides',
-				  'edit_item' => 'Edit slide',
-				  'not_found' =>  __('No slides found'),
-				  'not_found_in_trash' => __('No slides found in Trash')
+				  'name' => 'Examples', 
+				  'singular_name' => 'Example', 
+				  'add_new' => 'Add new example', 
+				  'add_new_item' => 'Add new example', 
+				  'new_item' => 'New example', 
+				  'view_item' => 'View examples',
+				  'edit_item' => 'Edit example',
+				  'not_found' =>  __('No examples found'),
+				  'not_found_in_trash' => __('No examples found in Trash')
 			  ), 
 			  'public' => true,
 			  'publicly_queryable' => true,
@@ -78,15 +78,15 @@ function asw_register_custom_types() {
 			  'query_var' => true,
 			  'rewrite' => false,
 			  'capability_type' => 'post',
-			  'has_archive' => false,
+			  'has_archive' => true,
 			  'menu_icon' => 'dashicons-images-alt',
-			  'exclude_from_search' => true, // If this is set to TRUE, Taxonomy pages won't work.
+			  'exclude_from_search' => false, // If this is set to TRUE, Taxonomy pages won't work.
 			  'hierarchical' => true,
 			  'menu_position' => null,
-			  'supports' => array('title', 'thumbnail')
+			  'supports' => array('title', 'thumbnail', 'editor'),
+			  'show_in_rest' => true
 		 )
 	  );
-	  */
 	
 	flush_rewrite_rules();
  
