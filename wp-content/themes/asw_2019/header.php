@@ -77,6 +77,8 @@
 
 <body id="<?php echo $post->post_name; ?>" class="asw <?php echo get_post_type(); ?>">
 
+<div id="site-wrap">
+
 <div id="backdrop"></div>
 
 <header>
