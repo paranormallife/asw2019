@@ -77,8 +77,6 @@
 
 <body id="<?php echo $post->post_name; ?>" class="asw <?php echo get_post_type(); ?>">
 
-<div id="site-wrap">
-
 <div id="backdrop"></div>
 
 <header>
@@ -98,6 +96,8 @@
 </header>
 
 <?php get_template_part('snippets/header_nav'); ?>
+
+<div id="content-wrap">
 
 <!-- END OF HEADER.PHP -->
 

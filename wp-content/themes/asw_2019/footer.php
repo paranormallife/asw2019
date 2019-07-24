@@ -1,4 +1,6 @@
 <!-- FOOTER.PHP ++++++++++++++++++++++ -->
+</div><!-- END #content-wrap -->
+
 <div id="footer-wrap">
     <footer>
         <div class="footer-container">
@@ -10,8 +12,6 @@
         </div>
     </footer>
 </div>
-
-</div><!-- END #site-wrap -->
 
 <?php get_template_part('assets/scripts'); ?>
 
