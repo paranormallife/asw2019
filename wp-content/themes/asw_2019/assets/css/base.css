@@ -169,13 +169,28 @@ main {
     text-align: left;
 }
 
+#menu-header-nav a:hover {
+    text-decoration: underline;
+}
+
 .nav-container {
     background-color: black;
     mix-blend-mode: multiply;
 }
 
+.nav-container ul {
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+}
+
 .header-nav .nav-container ul li a {
     color: white;
+}
+
+.header-nav .nav-container ul li.current-menu-item a {
+    opacity: 0.5;
 }
 
 footer {
