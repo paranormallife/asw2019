@@ -239,18 +239,18 @@ footer ul li a {
     line-height: 2rem;
 }
 
-.has-white-color  {
+.asw .has-white-color  {
     color: white;
 }
 
-.has-black-background-color {
+.asw .has-black-background-color {
     background-color: black;
 }
 
-.has-black-color  {
+.asw .has-black-color  {
     color: black;
 }
 
-.has-white-background-color {
+.asw .has-white-background-color {
     background-color: white;
 }
