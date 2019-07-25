@@ -254,3 +254,7 @@ footer ul li a {
 .asw .has-white-background-color {
     background-color: white;
 }
+
+.asw .pswp__bg {
+    background: #333 !important;
+}
