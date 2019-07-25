@@ -112,16 +112,6 @@ function mytheme_setup() {
 			'slug' => 'white',
 			'color' => '#FFF',
 		),
-		array(
-			'name' => __( 'Blue' ),
-			'slug' => 'blue',
-			'color' => '#00418C',
-		),
-		array(
-			'name' => __( 'Red' ),
-			'slug' => 'red',
-			'color' => '#750000',
-		),
 	) );
 	add_theme_support( 'disable-custom-colors' );
 	add_theme_support('disable-custom-font-sizes');
