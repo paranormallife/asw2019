@@ -21,6 +21,7 @@
     main.slim {
         max-width: 800px;
     }
+    
 
     .slim-content {
         margin-left: auto;
