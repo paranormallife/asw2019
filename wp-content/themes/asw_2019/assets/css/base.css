@@ -248,7 +248,7 @@ footer ul li a {
 }
 
 .asw .has-black-color  {
-    color: black;
+    color: black !important;
 }
 
 .asw .has-white-background-color {
