@@ -67,7 +67,7 @@ function asw_register_custom_types() {
 				  'add_new' => 'Add new example', 
 				  'add_new_item' => 'Add new example', 
 				  'new_item' => 'New example', 
-				  'view_item' => 'View examples',
+				  'view_item' => 'View example',
 				  'edit_item' => 'Edit example',
 				  'not_found' =>  __('No examples found'),
 				  'not_found_in_trash' => __('No examples found in Trash')
@@ -76,7 +76,7 @@ function asw_register_custom_types() {
 			  'publicly_queryable' => true,
 			  'show_ui' => true,
 			  'query_var' => true,
-			  'rewrite' => false,
+			  'rewrite' => true,
 			  'capability_type' => 'post',
 			  'has_archive' => true,
 			  'menu_icon' => 'dashicons-images-alt',

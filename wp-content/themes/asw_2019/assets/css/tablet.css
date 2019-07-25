@@ -13,4 +13,13 @@
         text-align: left;
     }
 
+    main {
+        margin: 2rem auto;
+        max-width: 1080px;
+    }
+
+    main.slim {
+        max-width: 800px;
+    }
+
 }
