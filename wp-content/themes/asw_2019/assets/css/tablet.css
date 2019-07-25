@@ -22,4 +22,10 @@
         max-width: 800px;
     }
 
+    .slim-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+    }
+
 }
