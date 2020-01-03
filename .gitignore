@@ -12,6 +12,7 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 wp-content/themes/twentynineteen/
+wp-content/themes/twentytwenty/
 
 /.htaccess
 /license.txt
@@ -24,6 +25,7 @@ clients/
 
 *.DS_Store
 *.zip
+*package-lock.json
 
 .well-known/
 400.shtml
