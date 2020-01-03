@@ -18,5 +18,22 @@ wp-content/themes/twentynineteen/
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+/clients
+clients/
+
 
 *.DS_Store
+*.zip
+
+.well-known/
+400.shtml
+401.shtml
+403.shtml
+404.shtml
+500.php
+500.shtml
+__MACOSX/
+cgi-bin/
+default.html
+error_log
+
