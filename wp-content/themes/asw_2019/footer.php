@@ -6,7 +6,7 @@
         <div class="footer-container">
             <?php wp_nav_menu( array( 'theme_location' => 'nav2' ) ); ?>
             <div class="copywrite">
-                &copy; <?php  date('Y'); ?> A Subtle Web.<br/>
+                &copy; <?php echo date('Y'); ?> A Subtle Web.<br/>
                 18 Livingston St, Kingston NY 12401
             </div>
         </div>
